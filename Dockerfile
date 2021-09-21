@@ -21,5 +21,5 @@ RUN apt-get install -qqy --no-install-recommends \
 # Version info
 ENV LLVM_RELEASE 12
 ENV LLVM_VERSION 12.0.0
-COPY scripts/install-llvm.sh .
+COPY install-llvm.sh .
 RUN bash install-llvm.sh
